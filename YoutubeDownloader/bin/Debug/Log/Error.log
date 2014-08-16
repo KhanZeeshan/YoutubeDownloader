@@ -1,17 +1,5 @@
-Date And Time : 8/16/2014 8:55:58 PM
-Message: The underlying connection was closed: An unexpected error occurred on a send.
-Stack Trace:    at System.Net.HttpWebRequest.GetResponse()
-   at YoutubeDownloader.Main.GetDownloadLink(String youttubehtml, String& Title) in E:\My Folder\Code\YoutubeDownloader\YoutubeDownloader\Main.cs:line 625
-Inner Exception: 
-System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
-   at System.Net.Security.SslState.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
-   at System.Net.Security.SslState.ProcessAuthentication(LazyAsyncResult lazyResult)
-   at System.Threading.ExecutionContext.runTryCode(Object userData)
-   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
-   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   at System.Net.TlsStream.ProcessAuthentication(LazyAsyncResult result)
-   at System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at System.Net.ConnectStream.WriteHeaders(Boolean async)
+Date And Time : 8/16/2014 10:00:42 PM
+Message: Value cannot be null.
+Parameter name: path
+Stack Trace:    at System.IO.Directory.Delete(String path, Boolean recursive)
+   at YoutubeDownloader.Main.Form1_FormClosing(Object sender, FormClosingEventArgs e) in E:\My Folder\Code\YoutubeDownloader\YoutubeDownloader\Main.cs:line 578
